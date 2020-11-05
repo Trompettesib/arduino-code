@@ -13,12 +13,11 @@
 //circumference = pi*2*r =~85 inches
 //max speed of 35mph =~ 616inches/second
 //max rps =~7.25
-#define reed 2//pin connected to read switch
-//storage variables
+#define reed 2 //pin connected to read switch
 
-#define NUM_LEDS 118
-#define DATA_PIN 3
-#define LED_TYPE WS2811
+#define NUM_LEDS //number of led you have
+#define DATA_PIN 3 //pin connected to leds
+#define LED_TYPE WS2811 //type of led you are using
 #define COLOR_ORDER GRB
 #define MILLISECOND_IN_HOUR 3600000.0
 #define MAX_RGB_VALUE 255
@@ -31,9 +30,9 @@
 CRGB leds[NUM_LEDS];
 
 int reedVal;
-long timer;// time between one full rotation (in ms)
+long timer; // time between one full rotation (in ms)
 float mph;
-float radius = 13.5;// tire radius (in inches)
+float radius = // wheel radius (in inches);
 float circumference;
 int maxReedCounter = 100;//min time (in ms) of one rotation (for debouncing)
 int reedCounter;
