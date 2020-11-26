@@ -32,7 +32,7 @@ CRGB leds[NUM_LEDS];
 int reedVal;
 long timer; // time between one full rotation (in ms)
 float mph;
-float radius = // wheel radius (in inches);
+float radius = ;// wheel radius (in inches)
 float circumference;
 int maxReedCounter = 100;//min time (in ms) of one rotation (for debouncing)
 int reedCounter;
